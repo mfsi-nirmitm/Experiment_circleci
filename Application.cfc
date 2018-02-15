@@ -33,6 +33,8 @@
         <!--- Initialize the application settings. --->
         <cfset application.dateInitialized = now() />
 
+		<cfset application.userService = createObject("component",'experiment.service.userService') />
+
         <!--- Return true so that the page can load. --->
         <cfreturn true />
     </cffunction>
